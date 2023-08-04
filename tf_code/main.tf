@@ -3,7 +3,7 @@ resource "aws_instance" "my_instance" {
   vpc_security_group_ids = [aws_security_group.my_security_group.id]
   subnet_id              = aws_subnet.my_subnet.id
   count                  = 1
-  key_name               = "app-ssh-key"
+  key_name               = "NewAcc"
   instance_type          = "t2.micro"
 }
 
